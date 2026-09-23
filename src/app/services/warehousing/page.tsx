@@ -1,0 +1,40 @@
+import Link from 'next/link';
+
+export default function WarehousingPage() {
+  return (
+    <div className="flex flex-col w-full bg-slate-50 min-h-screen">
+      {/* Hero Section */}
+      <section className="relative text-white py-28 px-6 lg:px-20 bg-slate-900" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 gradient-hero"></div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center section-fade">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6 tracking-tight">Strategic Warehousing & Distribution</h1>
+          <p className="text-lg text-slate-200 mb-8 leading-relaxed">Secure, scalable, and strategically located storage facilities across major North American hubs to optimize your inventory flow.</p>
+          <Link href="/quote" className="gradient-teal text-white font-bold py-4 px-10 rounded-xl shadow-lg hover:scale-105 transition-all inline-block">Inquire Storage Space</Link>
+        </div>
+      </section>
+
+      {/* Details Section */}
+      <section className="py-20 px-6 lg:px-20 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <h2 className="text-3xl font-bold text-navy mb-6">Advanced Facility Management</h2>
+            <p className="text-slate-600 mb-4 leading-relaxed">Our facilities go beyond simple storage. We integrate real-time inventory tracking, pick-and-pack fulfillment, cross-docking, and strict quality control measures to protect your stock and accelerate turnaround times.</p>
+            <ul className="space-y-3 text-slate-700 font-medium">
+              <li className="flex items-center gap-2"><span className="text-teal-600 font-bold">✓</span> Real-Time Inventory Control & Visibility</li>
+              <li className="flex items-center gap-2"><span className="text-teal-600 font-bold">✓</span> Flexible Scalability for Seasonal Demand</li>
+              <li className="flex items-center gap-2"><span className="text-teal-600 font-bold">✓</span> Value-Added Services: Kitting & Labeling</li>
+            </ul>
+          </div>
+          <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+            <h3 className="text-xl font-bold text-navy mb-4">Facility Highlights</h3>
+            <div className="space-y-4 text-sm text-slate-600">
+              <div className="flex justify-between border-b pb-2 font-medium"><span>Security</span><span className="text-slate-900 font-bold">24/7 Monitored & Gated</span></div>
+              <div className="flex justify-between border-b pb-2 font-medium"><span>Compliance</span><span className="text-slate-900 font-bold">C-TPAT Secure Standards</span></div>
+              <div className="flex justify-between border-b pb-2 font-medium"><span>Fulfillment</span><span className="text-slate-900 font-bold">B2B & E-Commerce Ready</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
