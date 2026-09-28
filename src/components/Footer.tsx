@@ -38,13 +38,13 @@ export default function Footer() {
             <h3 className="text-white text-lg font-bold mb-4">Contact Us</h3>
             <div className="space-y-3 text-sm">
               <p className="flex items-center">
-                <span className="mr-3 text-lg"></span>
+                <span className="mr-3 text-lg">Email: </span>
                 <a href="mailto:info@gallant-corp.com" className="hover:text-teal-400 transition-colors break-all">
                   info@gallant-corp.com
                 </a>
               </p>
               <p className="flex items-center">
-                <span className="mr-3 text-lg"></span>
+                <span className="mr-3 text-lg">Contact: </span>
                 <a href="tel:+14167355356" className="hover:text-teal-400 transition-colors whitespace-nowrap">
                   +1 (416) 735-5356
                 </a>
